@@ -3,13 +3,13 @@
 //     (c) 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 //     Underscore may be freely distributed under the MIT license.
 
-(function() {
+// (function() {
 
   // Baseline setup
   // --------------
 
   // Establish the root object, `window` in the browser, or `exports` on the server.
-  var root = this;
+  var root = exports;
 
   // Save the previous value of the `_` variable.
   var previousUnderscore = root._;
@@ -1307,16 +1307,4 @@
 
   });
 
-  // AMD registration happens at the end for compatibility with AMD loaders
-  // that may not enforce next-turn semantics on modules. Even though general
-  // practice for AMD registration is to be anonymous, underscore registers
-  // as a named module because, like jQuery, it is a base library that is
-  // popular enough to be bundled in a third party lib, but not be part of
-  // an AMD load request. Those cases could generate an error when an
-  // anonymous define() is called outside of a loader request.
-  if (typeof define === 'function' && define.amd) {
-    define('underscore', [], function() {
-      return _;
-    });
-  }
-}).call(exports);
+// }).call(exports);
