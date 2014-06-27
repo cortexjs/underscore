@@ -1,0 +1,27 @@
+{
+  "name": "underscore",
+  "version": "1.5.2",
+  "description": "JavaScript's functional programming helper library.",
+  "main": "index.js",
+  "repository": "git://github.com/cortexjs/underscore.git",
+  "keywords": [
+    "underscore",
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Jeremy Ashkenas",
+    "email": "jeremy@documentcloud.org"
+  },
+  "bugs": {
+    "url": "http://github.com/cortexjs/underscore/issues"
+  },
+  "homepage": "http://github.com/cortexjs/underscore",
+  "devDependencies": {
+    "assert": "*"
+  }
+}
